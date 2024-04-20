@@ -2,46 +2,46 @@
 #include <iostream>
 using namespace std;
 //overload by data type
-//int max_element(int arr[], int size)
-//{
-//    int max = arr[0];
-//	for (int i = 0; i < size; i++)
-//	{
-//		if (arr[i] > max)
-//			max = arr[i];
-//	}
-//	return max;
-//}
-//long max_element(long arr[], int size)
-//{
-//	long max = arr[0];
-//	for (int i = 0; i < size; i++)
-//	{
-//		if (arr[i] > max)
-//			max = arr[i];
-//	}
-//	return max;
-//}
-//float max_element(float arr[], int size)
-//{
-//	float max = arr[0];
-//	for (int i = 0; i < size; i++)
-//	{
-//		if (arr[i] > max)
-//			max = arr[i];
-//	}
-//	return max;
-//}
-//double max_element(double arr[], int size)
-//{
-//	double max = arr[0];
-//	for (int i = 0; i < size; i++)
-//	{
-//		if (arr[i] > max)
-//			max = arr[i];
-//	}
-//	return max;
-//}
+int max_element(int arr[], int size)
+{
+    int max = arr[0];
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	return max;
+}
+long max_element(long arr[], int size)
+{
+	long max = arr[0];
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	return max;
+}
+float max_element(float arr[], int size)
+{
+	float max = arr[0];
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	return max;
+}
+double max_element(double arr[], int size)
+{
+	double max = arr[0];
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	return max;
+}
 
 template<typename T>
 T max_element(T arr[], int size)

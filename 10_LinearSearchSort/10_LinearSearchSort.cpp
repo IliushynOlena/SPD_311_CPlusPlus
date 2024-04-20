@@ -114,7 +114,6 @@ void InsertSort(int arr[], int size)
 	}
 
 }
-
 void Foo(int a)
 {
 	if (a < 0)return;//break;
@@ -178,8 +177,34 @@ int BinarySearch(int arr[], int size, int key)
 		if (B > E)return -1;
 	}
 }
+void SearchByKey(int arr[], int size, int sortKey = 1)
+{
+	if (sortKey == 1)
+	{
+		//SortDesc(arr,size);
+	}
+	else if(sortKey == 0)
+	{
+		//SortAsc(arr,size);
+	}
+
+}
 int main()
 {
+	const int size = 10;
+	int arr[size];
+	InitArr(arr, size);
+	ShowArr(arr, size);
+	SearchByKey(arr, size, 0);
+	ShowArr(arr, size);
+	SearchByKey(arr, size, 1);
+	ShowArr(arr, size);
+
+
+
+
+
+
 	//const int size = 30;
 	//int arr[size];
 	//InitArr(arr, size);
