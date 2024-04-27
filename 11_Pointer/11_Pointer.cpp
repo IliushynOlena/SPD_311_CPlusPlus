@@ -176,20 +176,21 @@ int main()
    cout << "*fMax = " << *fMax << endl;
    */
 
-   /* int a = 5;
+    int a = 5;
     cout << "a = " << a << endl;
     ChangeVar(a);
     cout << "a = " << a << endl;
     ChangeVar(&a);
-    cout << "a = " << a << endl;*/
+    cout << "a = " << a << endl;
 
-    /*
+    
     const int size = 10;
     int arr[size];//40b
     int* parr = &arr[0];
     for (int i = 0; i < size; i++)
     {
         //arr[i] = rand() % 50;
+
         *(parr + i) = rand() % 50;        
     }
     int a = 7;
@@ -200,6 +201,7 @@ int main()
     cout << arr[0] << endl;
     cout << parr << endl;//address
     cout << *parr << endl;
+    cout << parr++ << endl;
     cout << arr << endl;
     cout << *arr << endl;
     for (int i = 0; i < size; i++)
@@ -257,7 +259,7 @@ int main()
         parr++;
     }
     cout << endl;
-    */
+    
     /*
     int a = 5;
     cout << "a = " << a << endl;
