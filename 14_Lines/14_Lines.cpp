@@ -27,10 +27,10 @@ int main()
 	cout << name << " has " << strlen(name) << " letters " << endl;
 
 	char my_name[255];
-	//cout << "Enter your name : ";
-	//cin >> my_name;
+	cout << "Enter your name : ";
+	cin >> my_name;
 	//cin.getline(my_name, 255);
-	//cout << "You entered : " << my_name << endl;
+	cout << "You entered : " << my_name << endl;
 
 
 	char text[] = "Print this!";
