@@ -26,10 +26,9 @@ public:
         this->name = name;//Bob = Bob
         this->age = age;//   12 = 12
         marks = nullptr;//0x0000017f97742dc0 = 0x0000017f97742dc0
-
         countMark = 0;//4 = 4
     }
-    Student(const Student &other)
+    Student(const Student &other)//constructor copy 
     {
         this->name = other.name;
         this->age = other.age;
