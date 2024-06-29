@@ -164,9 +164,9 @@ int main()
 	//cout << d << endl;
 	//int c = (int) 5.258;
 
-
 	/*
-	* //Const
+	
+    //Const
 	Account account1(5, 2000);
 	const Account account2(8, 5000);
 	cout<< "getRate account1 : " << account1.getRate()<<endl;
