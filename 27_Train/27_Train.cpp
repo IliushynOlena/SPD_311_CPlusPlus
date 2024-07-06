@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -131,10 +132,35 @@ public:
 				vagons[i].passengers += count;
 		}
 	}
+	operator string()
+	{
+		//string str = "";
+		//for (size_t i = 0; i < countVagon; i++)
+		//{
+		//	str += to_string( vagons[i].number )+ " ";//1 2 3 4 5 7 
+		//}
+		//return str;
+		return model;
+	}
 };
 
+void Print()
+{
+	cout << "Hello world" << endl;
+}
 int main()
 {
+	//int a = 5;
+	//int b = 3;
+	//int* ptr = &a;
+	//ptr = &b;
+	//cout << a << endl;
+	//cout << ptr << endl;
+	//Print();
+	//Print;
+	//cout << Print << endl;
+
+	
 	Train tr("Bob");
 	tr.Show();
 	tr.AddVagon(Vagon(1, 60, 32));
@@ -154,7 +180,9 @@ int main()
 	tr.AddPassengers(5, 3);
 	tr.Show();
 	cout << "copy train" << endl;
-	Train copy(tr);
-	copy.Show();
+	cout << (string)tr << endl;
+	//Train copy(tr);
+	//copy.Show();
+	
 }
 

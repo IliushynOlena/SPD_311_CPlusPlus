@@ -59,6 +59,7 @@ public:
 	}
 	Point operator += (const Point& other)
 	{
+	
 		this->x += other.x;
 		this->y += other.y;
 		return *this;
@@ -110,11 +111,12 @@ public:
 	}
 	Point operator++(int a)//postfix form increment 
 	{
+		
 		this->x++;
 		this->y++;
 		return *this;
 	}
-	Point operator--(int)//postfix form decrement 
+	Point operator--(int )//postfix form decrement 
 	{
 		this->x--;
 		this->y--;
@@ -150,7 +152,6 @@ istream& operator >> (istream& in,  Point& other)
 	in >> other.x;
 	in >> other.y;
 	return in;
-
 }
 bool operator > (const Point& left , const Point& right)
 {
@@ -162,7 +163,6 @@ Point operator++(Point& point)//prefix form increment
 	point.y++;
 	return point;
 }
-
 //Point operator++(Point& point)//prefix form increment 
 //{
 //	point.setX(point.getX()+ 1);
@@ -183,6 +183,7 @@ int main()
 	a += 5;
 	Point p1(5, 7);
 	Point p2(9, 4);
+	p1 + p2;
 	cin >> p1;
 	cout << p1 << p2 << endl;;
 
