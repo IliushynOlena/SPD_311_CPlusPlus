@@ -1,5 +1,7 @@
 
 #include <iostream>
+#include <list>
+
 using namespace std;
 
 
@@ -145,15 +147,22 @@ struct Vagon
 class Train
 {
     string model;
+    //Vagon* vagons1;
     List<Vagon> vagons;
     void Print()
     {
+        
         vagons.PrintList();
+    }
+    ~Train()
+    {
+
     }
 };
 int main()
 {
-        List<int> l;//constructor
+   
+       List<int> l;//constructor
        for (int i = 0; i < 10; i++)
        {
            l.AddToHead(i);

@@ -29,6 +29,7 @@ struct Vagon
 		cout << endl;
 	}
 };
+
 class Train
 {
 private:
@@ -124,7 +125,8 @@ public:
 		{
 			vagons[i].passengers += count;
 		}
-	}void operator()(int count, int number)
+	}
+	void operator()(int count, int number)
 	{
 		for (int i = 0; i < countVagon; i++)
 		{
