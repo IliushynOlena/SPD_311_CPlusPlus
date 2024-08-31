@@ -39,7 +39,7 @@ public:
     {
         cout << "I am a Police Car! I can drive with speed " << speed << "km/h" << endl;
     }
-    void Print()const override
+    void Print()const 
     {
         Car::Print();
         cout << "sound Volume : " << soundVolume << endl;
@@ -191,11 +191,11 @@ class SportCar : public Car//public private protected
 public:
     SportCar() :turbo(0), Car() {}
     SportCar(string m, int y, int s, float v, int t) :turbo(t), Car(m, y, v) {}
-    void Drive()const override
+    void Drive()const 
     {
         cout << "I am a Sport Car! I can drive with speed " << speed << "km/h" << endl;
     }
-    void Print()const override
+    void Print()const 
     {
         Car::Print();
         cout << "Turbo : " << turbo << endl;
@@ -209,8 +209,7 @@ class TestCar: PoliceCar
 void TestDrive(Car &car)
 {
     car.SeedSpeed(60);
-    car.Drive();
-    
+    car.Drive();    
 }
 
 int main()
