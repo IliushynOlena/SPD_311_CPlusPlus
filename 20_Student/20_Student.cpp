@@ -9,7 +9,7 @@ struct Date
     int year;
 };
 
-class Student//incapsulation
+class Person//incapsulation
 {
 private:
     string name;//OLena
@@ -37,7 +37,7 @@ private:
     }
 public:
     ////ctor + TAB
-    Student()//default constructor
+    Person()//default constructor
     {
         cout << "Constructor" << endl;
         name = "no name";
@@ -56,7 +56,7 @@ public:
         average = 0;
     }
     //parametrized constructor
-    Student(string name, string lastname, string surname)
+    Person(string name, string lastname, string surname)
     {
         cout << "Ctor invocation......." << endl;
         this->name = name;
@@ -66,7 +66,7 @@ public:
         markCount = 0;
         average = 0;
     }
-    Student(string name, string lastname, string surname, Date birthday)
+    Person(string name, string lastname, string surname, Date birthday)
     {
         cout << "Ctor invocation......." << endl;
         this->name = name;
@@ -77,7 +77,7 @@ public:
         markCount = 0;
         average = 0;
     }
-    Student(string name, string lastname, string surname, Date birthday, string phone)
+    Person(string name, string lastname, string surname, Date birthday, string phone)
     {
         cout << "Ctor invocation......." << endl;
         this->name = name;
@@ -223,7 +223,7 @@ public:
         return group_number;
     }
     //~  + Tab
-    ~Student()//destructor
+    ~Person()//destructor
     {
         cout << "Destructor  "<<name  << endl;
         if (marks != nullptr)
@@ -244,24 +244,24 @@ int main()
     
     Car car;//default constructor
 
-    Student student;//default constructor
+    Person student;//default constructor
     //student.InitDefault();
     student.setName("Tania");
     student.Show();
 
-    Student st1;//default constructor
+    Person st1;//default constructor
     //st1.InitDefault();
     st1.setName("Vasia");
     st1.Show();
 
 
-    Student newStudent("Olena", "Sergievna", "Iliushyn");
+    Person newStudent("Olena", "Sergievna", "Iliushyn");
     newStudent.Show();
 
-    Student st2("Mukola", "Petrovuch", "Petruk", { 11,5,2004 });
+    Person st2("Mukola", "Petrovuch", "Petruk", { 11,5,2004 });
     st2.Show();
 
-    Student st3("Olga", "Ivanivna", "Semenuc", { 5,5,2005 }, "+380956321478");
+    Person st3("Olga", "Ivanivna", "Semenuc", { 5,5,2005 }, "+380956321478");
     st3.Show();
     st3.AddMark(12);
     st3.AddMark(7);

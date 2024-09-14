@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Student
+class Person
 {
     //private public protected
 private:
@@ -49,7 +49,7 @@ public:
 
 int main()
 {
-    Student st;
+    Person st;
     st.setName("Tom");
     st.setAge( 12);
     st.setMark(12, 0);

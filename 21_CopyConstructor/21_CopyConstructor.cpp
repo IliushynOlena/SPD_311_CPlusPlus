@@ -6,7 +6,7 @@ struct Point//public
     int x;
     int y;
 };
-class Student//private
+class Person//private
 {
 private:
     string name;
@@ -14,21 +14,21 @@ private:
     int* marks;
     int countMark;
 public:
-    Student()//default constructor
+    Person()//default constructor
     {
         name = "no name";
         age = 0;
         marks = nullptr;
         countMark = 0;
     }
-    Student(string name, int age)//parametrized constructor
+    Person(string name, int age)//parametrized constructor
     {
         this->name = name;//Bob = Bob
         this->age = age;//   12 = 12
         marks = nullptr;//0x0000017f97742dc0 = 0x0000017f97742dc0
         countMark = 0;//4 = 4
     }
-    Student(const Student &other)//constructor copy 
+    Person(const Person &other)//constructor copy 
     {
         this->name = other.name;
         this->age = other.age;
@@ -63,7 +63,7 @@ public:
             cout << marks[i] << " ";
         }cout << endl;
     }
-    ~Student()
+    ~Person()
     {
         if (marks != nullptr)
             delete[]marks;
@@ -84,17 +84,17 @@ int main()
     cout << a << endl;
 
     Point p;
-    Student st;//default constructor
+    Person st;//default constructor
     st.Print();
 
-    Student student("Bob", 12);//parametrized constructor
+    Person student("Bob", 12);//parametrized constructor
     student.Print();
     student.AddMark(12);
     student.AddMark(7);
     student.AddMark(8);
     student.AddMark(9);
     student.Print();
-    Student copy(student);
+    Person copy(student);
     copy.Print();
 
 

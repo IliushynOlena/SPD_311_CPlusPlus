@@ -78,7 +78,7 @@ public:
     Stack() = delete;
     Stack(int size):size(size)
     {
-        arr = new int[size];//10
+        arr = new int[size];//-10
         top = EMPTY;
     }
     bool IsFull()const

@@ -32,7 +32,7 @@ public:
     {
         cout << "I am running with speed "<< runSpeed << "km/g" << endl;
     }
-    void MakeSound()
+    void MakeSound()override
     {
         cout << "Rrrrrrrr-rrrrrrrrrrrrr-rrrrrrrrrrrrrr" << endl;
     }
@@ -85,9 +85,9 @@ void RollCall(Animal& animal)
 }
 int main()
 {
-    //Animal animal("Cat", "House", "Mammal");
-    //animal.MakeSound();
-
+    /*Animal animal("Cat", "House", "Mammal");
+    animal.MakeSound();*/
+   
     Lion lion("King Lion","Africa","Predator",80);
     lion.ShowInfo();
     lion.Move();
