@@ -161,7 +161,8 @@ class Train
 };
 int main()
 {
-   
+    List<int> listmy;
+    
        List<int> l;//constructor
        for (int i = 0; i < 10; i++)
        {

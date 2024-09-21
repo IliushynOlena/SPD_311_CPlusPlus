@@ -138,6 +138,7 @@ int main()
 {
     srand(time(0));
     Stack st(15);//default constructor
+   
     while (!st.IsFull())
     {
         st.Push(rand()%50);
